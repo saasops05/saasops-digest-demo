@@ -4,7 +4,9 @@
 
 ## Watch
 
-Open [demo.html](./demo.html) or download [saasops-digest-demo.mp4](./saasops-digest-demo.mp4).
+[Watch it live](https://saasops05.github.io/saasops-digest-demo/) — same player as [demo.html](https://saasops05.github.io/saasops-digest-demo/demo.html).
+
+Locally: open [demo.html](./demo.html) or download [saasops-digest-demo.mp4](./saasops-digest-demo.mp4).
 
 ## What it shows
 
