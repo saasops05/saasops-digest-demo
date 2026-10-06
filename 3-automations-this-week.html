@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>3 automations founders can set up this week — SaaS Ops Tune-Up</title>
+<style>
+  :root { --bg:#0f1419; --card:#161d26; --card2:#1c2531; --line:#2a3544; --text:#e7ecf3; --muted:#9aa8b8; --link:#7dd3fc; --ok:#4ade80; }
+  * { box-sizing:border-box; }
+  body { margin:0; font-family:system-ui, sans-serif; background:var(--bg); color:var(--text); line-height:1.55; padding:32px 16px 48px; }
+  main { max-width:720px; margin:0 auto; }
+  a { color:var(--link); }
+  h1 { font-size:1.55rem; margin:0 0 8px; line-height:1.25; }
+  h2 { font-size:1.1rem; margin:0 0 10px; }
+  h3 { font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); margin:0 0 8px; font-weight:600; }
+  p { margin:0 0 12px; }
+  .intro { color:var(--muted); margin-bottom:8px; }
+  .pills { display:flex; flex-wrap:wrap; gap:8px; margin:14px 0 24px; padding:0; list-style:none; }
+  .pills li { border:1px solid var(--line); border-radius:999px; padding:3px 12px; font-size:.85rem; color:var(--muted); }
+  .section { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 22px; margin:0 0 18px; }
+  .section ol, .section ul { margin:0 0 12px; padding-left:1.25rem; color:var(--text); }
+  .section li { margin:0 0 6px; }
+  .meta { font-size:.9rem; color:var(--muted); margin:0 0 10px; }
+  .links { font-size:.9rem; margin:10px 0 0; }
+  .links a { margin-right:12px; }
+  .order ol { margin:0; padding-left:1.25rem; }
+  .cta { margin-top:8px; border:1px solid #1e4a5e; background:#0b2a38; border-radius:10px; padding:16px 18px; }
+  .cta h2 { margin-bottom:8px; }
+  .note { font-size:.85rem; color:var(--muted); margin-top:16px; }
+  footer { margin-top:28px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:.9rem; text-align:center; }
+  footer p { margin:0 0 6px; }
+  .draft-banner { background:var(--card2); border:1px dashed var(--line); border-radius:8px; padding:10px 14px; font-size:.85rem; color:var(--muted); margin-bottom:20px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="draft-banner">DRAFT — not published. Hosting TBD (Kevin / Agency CEO). Fixture demos only; no fake testimonials.</p>
+
+  <h1>3 automations founders can set up this week</h1>
+  <p class="intro">You’re not looking for another chatbot. You’re looking to stop losing time on GitHub / Slack / email handoffs — release notes rewritten by hand, support mail half-filed as issues, blank reply cursors on the same three asks.</p>
+  <ul class="pills">
+    <li>Founder-led SaaS · 5–50</li>
+    <li>Human-in-the-loop always</li>
+    <li>Fixture demos · not client cases</li>
+    <li>Soft audit $500–$1k</li>
+  </ul>
+
+  <section class="section" id="digest">
+    <h3>Automation 1</h3>
+    <h2>Release digest — GitHub → Slack</h2>
+    <p class="meta">On release / tag: merged PRs → Features / Fixes / Chores with authors + links → facts-only Slack digest. Human reviews, then sends. No LLM inventing impact.</p>
+    <p><strong>This week</strong></p>
+    <ol>
+      <li>Pick one repo that ships tags regularly.</li>
+      <li>Wire the Action (or run the fixture locally first).</li>
+      <li>Ship one digest to a private Slack channel.</li>
+      <li>Keep the footer: auto-generated · verify before broad distribution.</li>
+    </ol>
+    <p class="links">
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo.html">Live digest demo</a>
+      <a href="https://github.com/saasops05/release-digest-action">OSS Action</a>
+    </p>
+  </section>
+
+  <section class="section" id="triage">
+    <h3>Automation 2</h3>
+    <h2>Support triage — inbound → draft issue + Slack gate</h2>
+    <p class="meta">Inbound message → rules-based category / priority / confidence → GitHub <em>issue draft</em> + Slack approval card. Approve / edit / reject before anything is filed. Never invents ARR-at-risk — only what’s in the message.</p>
+    <p><strong>This week</strong></p>
+    <ol>
+      <li>Capture 5–10 inbound samples; list labels you already use.</li>
+      <li>Write keyword → category / priority rules (bug / billing / how-to).</li>
+      <li>Walk the live fixture, then point rules at one mailbox or Slack channel.</li>
+      <li>Require the Slack gate before any GitHub issue is created.</li>
+    </ol>
+    <p class="links">
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo-triage.html">Live triage demo</a>
+    </p>
+  </section>
+
+  <section class="section" id="reply">
+    <h3>Automation 3</h3>
+    <h2>Reply drafts — founder voice, never auto-send</h2>
+    <p class="meta">Inbound sales/support email → short reply draft in your voice → held for approve / edit / reject. Guardrails block invented ARR, prices, and dates. Even “approve” just hands you the draft — you copy it into your mail client.</p>
+    <p><strong>This week</strong></p>
+    <ol>
+      <li>Pick one mailbox or channel where the same asks keep landing.</li>
+      <li>Write a short founder-voice note + approved link list.</li>
+      <li>Drafts only — nothing auto-sends.</li>
+      <li>Log what you edited so the next version gets sharper.</li>
+    </ol>
+    <p class="links">
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo-reply.html">Live reply demo</a>
+    </p>
+  </section>
+
+  <section class="section order">
+    <h3>Order of operations</h3>
+    <ol>
+      <li><strong>Digest</strong> — visible win, easy demo, Action ready for the release path</li>
+      <li><strong>Triage</strong> — less copy-paste noise; Slack gate before GitHub</li>
+      <li><strong>Reply drafts</strong> — careful; human always owns send</li>
+    </ol>
+    <p class="meta" style="margin-top:10px;margin-bottom:0;">Don’t stack all three in week one. Ship one, keep the human gate, then add the next.</p>
+  </section>
+
+  <section class="cta">
+    <h2>If you want a hand</h2>
+    <p>One-week paid ops audit for founder-led SaaS — typically <strong>$500–$1,000</strong>. We map one painful GitHub / Slack / email workflow and leave a short plan for the next 2–3 automations in tools you already use.</p>
+    <p class="links">
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo.html">Digest</a>
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo-triage.html">Triage</a>
+      <a href="https://saasops05.github.io/saasops-digest-demo/demo-reply.html">Reply</a>
+      <a href="https://saasops05.github.io/saasops-digest-demo/scorecard.html">Scorecard</a>
+      <a href="https://saasops05.github.io/">Homepage</a>
+    </p>
+    <p style="margin:12px 0 0;"><a href="mailto:saasops@agentmail.to">saasops@agentmail.to</a> · SaaS Ops Tune-Up</p>
+  </section>
+
+  <p class="note">FTC / honesty: time figures and “this week” steps are conversational estimates from our demo script — not guaranteed savings or earnings. Fixtures ≠ client case studies. Human-in-the-loop always. No testimonials on this page.</p>
+
+  <footer>
+    <p>SaaS Ops Tune-Up · draft lead magnet</p>
+    <p><a href="https://github.com/saasops05/release-digest-action">release-digest-action</a></p>
+  </footer>
+</main>
+</body>
+</html>
